@@ -16,7 +16,7 @@ public class RespondDTO {
     private String message;
     private Object content;
 
-    private RespondDTO of(String code, String message, Object content) {
+    public static RespondDTO of(String code, String message, Object content) {
         return new RespondDTO(code, message, content);
     }
 }

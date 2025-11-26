@@ -40,7 +40,7 @@ public class ExpenseController {
         }
     }
 
-    @PutMapping("/updateExpense")
+    @PutMapping("/updateExpense/{id}")
     public ResponseEntity<RespondDTO> updateExpense(@PathVariable Long id, @RequestBody ExpenseDTO expenseDTO) {
         try{
             ExpenseDTO updatedExpense = expenseService.updateExpense(id, expenseDTO);
